@@ -52,7 +52,7 @@ Navbar.propTypes = {
 }
 
 Navbar.defaultProps = {
-  title: "App Title",
+  title: "Robot Academy",
   icon: 'fas fa-lightbulb'
 }
 
