@@ -51,16 +51,27 @@ const Dashboard = ({ history }) => {
   return (
 
 
-    
-    <div className="row">
-      <div className="col">
-        <ChapterSelect/>
-      </div>
-      <div className="col">
-        <AvailableCourses/>
-      </div>
+   <div>
+     
+     <div className="row">
+       <div className="col">
+         <ChapterSelect/>
+       </div>
+       <div className="col">
+         <AvailableCourses/>
+       </div>
 
-    </div>
+
+       <div className="row">
+       <div className="col">
+         <AccountManagement/>
+       </div>
+       <div className="col">
+         <Notifications/>
+       </div>
+     </div>
+
+   </div>
   )
 }
 

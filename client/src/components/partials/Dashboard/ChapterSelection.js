@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
+import ChapterListItem from './ChapterListItem';
+
 
 const ChapterSelection = (props) => {
 
@@ -14,20 +14,10 @@ const ChapterSelection = (props) => {
     { id: 5, name: "Chapter 5", description: "Translation and Scaling" }
   ];
 
-  const courseList = ["Lab 1", "Lab 2", "Lab 3"]
-  const defaultCourse = courseList[0]
-
-
   return (
     <div>
-      <Dropdown options={courseList} value={defaultCourse}/>
       {chapters.map(chapter => 
-        <div class="media text-muted pt-3">
-          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <strong class="d-block text-gray-dark">{chapter.name}</strong>
-            {chapter.description}
-          </p>
-        </div>
+          <ChapterListItem chapter={chapter.name} description={chapter.description}/>
       )}
 
     </div>

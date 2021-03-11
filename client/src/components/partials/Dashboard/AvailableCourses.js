@@ -16,6 +16,10 @@ const AvailableCourses = (props) => {
 
     return (
         <div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Available Labs</h6>
+
         {courses.map(course =>
             <div className="media text-muted pt-3">
                 <p className="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
@@ -24,6 +28,7 @@ const AvailableCourses = (props) => {
                 </p>
             </div>
         )}
+        </div>
 
         </div>
     )
