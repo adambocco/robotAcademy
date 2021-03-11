@@ -10,7 +10,7 @@ const FillInTheBlank = () => {
                 <img class="card-img-top" src="robotics3.png" alt="Card image cap"></img>
                 <div class="card-body">
                     <h5 class="card-title">Robotics comprehension</h5>
-                    <p class="card-text">
+                    <p class="card-text d-inline">
 
                         The answer to the question is
                         <input className="d-inline" type="text"></input>

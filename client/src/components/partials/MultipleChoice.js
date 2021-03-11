@@ -10,9 +10,9 @@ const MultipleChoice = () => {
         <div class="card-body">
           <h5 class="card-title">Robotics comprehension</h5>
           <p class="card-text">What is the answer to this question?</p>
-          <a href="#" class="btn btn-primary">Answer1</a>
-          <a href="#" class="btn btn-primary">Answer2</a>
-          <a href="#" class="btn btn-primary">Answer3</a>
+          <a href="#" class="btn btn-primary m-1">Answer1</a>
+          <a href="#" class="btn btn-primary m-1">Answer2</a>
+          <a href="#" class="btn btn-primary m-1">Answer3</a>
         </div>
         <HintBar/>
       </div>

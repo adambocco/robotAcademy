@@ -9,6 +9,8 @@ import Register from './components/auth/Register'
 import LandingPage from './components/pages/LandingPage'
 import Navbar from './components/partials/Navbar'
 import Alerts from './components/partials/Alerts'
+import Dashboard from './components/pages/Dashboard'
+import Course from './components/pages/Course'
 
 
 if(localStorage.token){
@@ -27,6 +29,8 @@ function App() {
       <Switch>
         <Route exact path='/' component={LandingPage}/>
         <PrivateRoute exact path='/home' component={Home}/>
+        <PrivateRoute exact path='/course' component={Course}/>
+        <PrivateRoute exact path='/dashboard' component={Dashboard}/>
         <Route exact path='/register' component={Register}/>
         <Route exact path='/login' component={Login}/>
       </Switch>

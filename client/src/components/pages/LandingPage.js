@@ -6,7 +6,7 @@ const LandingPage = () => {
     <div style={{textAlign: "center"}}>
        <div>🔥 Thanks for using the Robocourse ;) 🔥 </div> 
        <div>Check out my website <a href="https://abocco.com">website</a></div>
-       <div>uwu</div> 
+       <div>:)</div> 
     </div>
     </>
   )

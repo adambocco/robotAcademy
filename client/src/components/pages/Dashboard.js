@@ -5,14 +5,10 @@ import { USER_LOADED, AUTH_ERROR } from '../../redux/types'
 import axios from 'axios'
 import setAuthToken from '../../utils/setAuthToken'
 import { useState } from 'react'
-import YouTube from 'react-youtube';
-import MultipleChoice from '../partials/MultipleChoice'
-import MatchUp from '../partials/MatchUp'
-import FillInTheBlank from '../partials/FillInTheBlank'
-import AllThatApply from '../partials/AllThatApply'
-import ChapterNav from '../partials/ChapterNav'
+import ChapterSelect from '../partials/Dashboard/ChapterSelect'
+import AvailableCourses from '../partials/Dashboard/AvailableCourses'
 
-const Home = ({ history }) => {
+const Dashboard = ({ history }) => {
 
   const dispatch = useDispatch();
 
@@ -56,45 +52,17 @@ const Home = ({ history }) => {
 
 
     
-    <div>
-      <h1>Hi {username}! Welcome to Application</h1>
-      <div className="text-center">
-
-      <YouTube videoId="PwGY8PxQOXY" opts={opts} onReady={onReady} />
-      <ChapterNav/>
+    <div className="row">
+      <div className="col">
+        <ChapterSelect/>
+      </div>
+      <div className="col">
+        <AvailableCourses/>
       </div>
 
-      <div className="">
-        <div className="row">
-
-          <div className="col">
-            <MultipleChoice />
-          </div>
-
-          <div className="col">
-            <MatchUp />
-          </div>
-
-          <div className="col">
-            <FillInTheBlank />
-          </div>
-        </div>
-
-
-        <div className="row">
-
-        <div className="col">
-          <AllThatApply />
-        </div>
-
-        <div className="col">
-          <MultipleChoice />
-        </div>
-      </div>
-      </div>
     </div>
   )
 }
 
 
-export default Home
+export default Dashboard

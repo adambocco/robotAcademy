@@ -20,6 +20,16 @@ const Navbar = ({title, icon}) => {
           <i className="fas fa-sign-out-alt"><span className="hide-sm">Logout</span></i>
         </a>
       </li>
+      
+      <li>
+      <Link to="/course">Course</Link>
+    </li>
+      <li>
+        <Link to="/dashboard">Dashboard</Link>
+      </li>
+      <li>
+      <Link to="/communitychat">Community Chat</Link>
+    </li>
     </>
   )
 
