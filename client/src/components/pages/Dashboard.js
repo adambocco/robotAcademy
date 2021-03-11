@@ -7,6 +7,8 @@ import setAuthToken from '../../utils/setAuthToken'
 import { useState } from 'react'
 import ChapterSelect from '../partials/Dashboard/ChapterSelect'
 import AvailableCourses from '../partials/Dashboard/AvailableCourses'
+import AccountManagement from '../partials/Dashboard/AccountManagement'
+import Notifications from '../partials/Dashboard/Notifications'
 
 const Dashboard = ({ history }) => {
 
@@ -51,27 +53,29 @@ const Dashboard = ({ history }) => {
   return (
 
 
-   <div>
-     
-     <div className="row">
-       <div className="col">
-         <ChapterSelect/>
-       </div>
-       <div className="col">
-         <AvailableCourses/>
-       </div>
+    <div>
+
+      <div className="row">
+        <div className="col">
+          <ChapterSelect />
+        </div>
+        <div className="col">
+          <AvailableCourses />
+        </div>
+        </div>
 
 
-       <div className="row">
-       <div className="col">
-         <AccountManagement/>
-       </div>
-       <div className="col">
-         <Notifications/>
-       </div>
-     </div>
+        <div className="row">
+          <div className="col">
+            <AccountManagement />
+          </div>
+          <div className="col">
+            <Notifications />
+          </div>
 
-   </div>
+        </div>
+
+      </div>
   )
 }
 

@@ -17,12 +17,12 @@ const AccountManagement = (props) => {
         <div>
 
         <h4>Change Password:</h4>
-        <hr>
+        <hr></hr>
         <input type="text" placeholder="New Username"></input>
         <input type="text" placeholder="New Username Again"></input>
 
         <h4>Change Password:</h4>
-        <hr>
+        <hr></hr>
         <input type="text" placeholder="New Password"></input>
         <input type="text" placeholder="New Password Again"></input>
 
